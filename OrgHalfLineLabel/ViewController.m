@@ -21,6 +21,8 @@
     
     NSString * halfStr = @"我志愿加入中国共产党，拥护党的纲领，遵守党的章程，履行党员义务，执行党的决定，严守党的纪律，保守党的秘密，对党忠诚，积极工作，为共产主义奋斗终身，随时准备为党和人民牺牲一切，永不叛党。";
     
+    //NSString * halfStr = @"I volunteered to join the Communist Party of China, adhered to the party's programme, adhered to the party's statute, fulfilled the party's obligations, carried out the party's decisions, strictly adhered to the party's discipline, conserved the secret of the party, worked hard for the party, worked hard for the Communist Party, and was ready to sacrifice the party and the people at any time and never rebel.";
+    
     OrgHalfLineLabel * label1 = [[OrgHalfLineLabel alloc] initWithFrame:CGRectMake(10.f, 40.f, self.view.frame.size.width - 20.f, 100.f)];
     label1.backgroundColor = [UIColor lightGrayColor];
     label1.numberOfLines   = 0;

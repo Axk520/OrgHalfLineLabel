@@ -164,9 +164,10 @@
     }
     
     NSMutableParagraphStyle * style = [[NSMutableParagraphStyle alloc] init];
-    style.lineSpacing = (_orgLineSpacing > 0) ? _orgLineSpacing : 4;
+    style.lineSpacing      = (_orgLineSpacing > 0) ? _orgLineSpacing : 4;
     style.paragraphSpacing = 0;
-    style.alignment = self.textAlignment;
+    style.alignment     = self.textAlignment;
+    style.lineBreakMode = NSLineBreakByCharWrapping;
     
     NSMutableAttributedString * attributedString = [[NSMutableAttributedString alloc] initWithString:string];
     NSDictionary * attributes = @{NSForegroundColorAttributeName : self.textColor,
